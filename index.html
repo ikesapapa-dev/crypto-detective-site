@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仮想通貨専門士 | 仮想通貨詐欺・投資詐欺の被害調査相談（crypto-detective）</title>
+<meta name="description" content="仮想通貨(暗号資産)詐欺・投資詐欺の被害相談窓口。ブロックチェーン解析による送金先の追跡と、警察提出用の調査書作成を行います。相談は無料、LINEで24時間受付。">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://crypto-detective.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="仮想通貨専門士 | 仮想通貨詐欺・投資詐欺の被害調査相談（crypto-detective）">
+<meta property="og:description" content="ブロックチェーン解析による送金先の追跡と、警察提出用の調査書作成を無料相談で受付中。">
+<meta property="og:url" content="https://crypto-detective.com/">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@crypto_detect1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "仮想通貨専門士",
+  "alternateName": "crypto-detective",
+  "url": "https://crypto-detective.com/",
+  "description": "仮想通貨詐欺・投資詐欺の被害に関するブロックチェーン解析および調査書作成サービス",
+  "areaServed": "JP",
+  "priceRange": "相談無料",
+  "sameAs": ["https://twitter.com/crypto_detect1"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "相談は本当に無料ですか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "はい。現状のヒアリングと、対応が可能かどうかの診断までは何度でも無料です。費用が発生するのは、実際に調査書の作成を依頼された場合のみです。"}
+    },
+    {
+      "@type": "Question",
+      "name": "どんな情報を用意すればいいですか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "送金先のウォレットアドレスや取引所名、相手とのやり取りのスクリーンショットがあれば、初回相談の精度が上がります。手元になくても相談可能です。"}
+    },
+    {
+      "@type": "Question",
+      "name": "被害から時間が経っていても相談できますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "はい。時間の経過によって対応できる範囲は変わりますが、送金履歴の解析など、状況によって選べる手段は複数あります。"}
+    },
+    {
+      "@type": "Question",
+      "name": "取引所への開示請求や加害者の特定まで行ってもらえますか？",
+      "acceptedAnswer": {"@type": "Answer", "text": "いいえ。当窓口が行うのは、ブロックチェーン上の送金履歴を解析し、着金先の取引所を特定して調査書にまとめることまでです。取引所への法的な開示請求や、加害者の特定・所在調査は警察の権限で行われるものであり、当窓口が代行することはありません。調査書はその後の警察対応をスムーズにするための資料です。"}
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --paper:#EFEEE6;
+    --paper-deep:#E6E3D6;
+    --ink:#1B2230;
+    --ink-soft:#4B5567;
+    --ink-faint:#8A8F7E;
+    --verify:#2F6E5B;
+    --verify-soft:#E4ECE8;
+    --alert:#B8791D;
+    --stamp:#A13D2C;
+    --line-green:#06C755;
+    --rule:#C9C6B6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans JP',sans-serif;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+
+  /* ===== Header ===== */
+  header.top{
+    border-bottom:2px solid var(--ink);
+    padding:18px 0;
+    position:sticky;top:0;
+    background:var(--paper);
+    z-index:10;
+  }
+  .top-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+  .logo-group{display:flex;align-items:center;gap:12px;}
+  .logo-mark{
+    flex-shrink:0;width:38px;height:38px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .logo{
+    font-family:'Shippori Mincho',serif;
+    font-weight:800;font-size:1.35rem;letter-spacing:.04em;
+  }
+  .logo small{
+    display:block;font-family:'JetBrains Mono',monospace;
+    font-size:.6rem;color:var(--ink-faint);letter-spacing:.15em;font-weight:400;
+    margin-top:2px;
+  }
+  nav.top-nav{display:flex;gap:20px;font-size:.85rem;font-weight:500;}
+  nav.top-nav a{text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s;}
+  nav.top-nav a:hover{border-color:var(--ink);}
+
+  /* ===== Hero ===== */
+  .hero{padding:64px 0 48px;border-bottom:1px solid var(--rule);}
+  .case-tag{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:.72rem;letter-spacing:.1em;
+    color:var(--stamp);border:1px solid var(--stamp);
+    padding:4px 10px;margin-bottom:22px;
+    transform:rotate(-1deg);
+  }
+  h1{
+    font-family:'Shippori Mincho',serif;
+    font-weight:800;
+    font-size:clamp(1.7rem,4.2vw,2.6rem);
+    line-height:1.5;
+    max-width:14ch;
+    margin-bottom:22px;
+  }
+  .hero p.lead{font-size:1.02rem;color:var(--ink-soft);max-width:52ch;margin-bottom:16px;}
+  .hero p.byline{font-size:.85rem;color:var(--ink-faint);margin-bottom:32px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:14px 26px;font-weight:700;font-size:.95rem;
+    text-decoration:none;border-radius:2px;
+    transition:transform .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-line{background:var(--line-green);color:#fff;}
+  .btn-ghost{border:1.5px solid var(--ink);color:var(--ink);}
+
+  /* ===== Section shared ===== */
+  section{padding:56px 0;border-bottom:1px solid var(--rule);}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;font-size:.7rem;
+    letter-spacing:.15em;color:var(--ink-faint);margin-bottom:10px;
+  }
+  h2{
+    font-family:'Shippori Mincho',serif;font-weight:700;
+    font-size:1.5rem;margin-bottom:28px;
+  }
+
+  /* ===== Symptom checklist ===== */
+  .checklist{display:grid;gap:14px;}
+  .check-item{
+    display:flex;gap:14px;align-items:flex-start;
+    background:var(--paper-deep);padding:16px 18px;
+    border-left:3px solid var(--stamp);
+  }
+  .check-item .mark{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--stamp);flex-shrink:0;}
+
+  /* ===== Operator card ===== */
+  .operator-card{
+    display:flex;gap:22px;align-items:flex-start;
+    background:var(--paper-deep);
+    border:1px solid var(--rule);
+    padding:26px 24px;
+    margin-bottom:22px;
+    flex-wrap:wrap;
+  }
+  .operator-card .avatar{
+    width:64px;height:64px;flex-shrink:0;
+    border:2px solid var(--ink);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Shippori Mincho',serif;font-weight:800;font-size:1.3rem;
+    background:var(--paper);
+  }
+  .operator-card .op-name{font-family:'Shippori Mincho',serif;font-weight:700;font-size:1.15rem;margin-bottom:4px;}
+  .operator-card .op-loc{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--ink-faint);letter-spacing:.05em;margin-bottom:10px;}
+  .operator-card .op-bio{font-size:.9rem;color:var(--ink-soft);max-width:56ch;}
+
+  /* ===== Services ===== */
+  .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);}
+  @media(max-width:640px){.service-grid{grid-template-columns:1fr;}}
+  .service-card{background:var(--paper);padding:26px 22px;}
+  .service-card .num{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--verify);margin-bottom:10px;}
+  .service-card h3{font-family:'Shippori Mincho',serif;font-size:1.05rem;margin-bottom:10px;font-weight:700;}
+  .service-card p{font-size:.88rem;color:var(--ink-soft);}
+
+  /* ===== Flow ===== */
+  .flow{counter-reset:step;}
+  .flow-item{display:flex;gap:20px;padding:20px 0;border-bottom:1px dashed var(--rule);}
+  .flow-item:last-child{border-bottom:none;}
+  .flow-num{
+    counter-increment:step;
+    font-family:'JetBrains Mono',monospace;font-weight:700;
+    color:var(--verify);flex-shrink:0;width:2.4rem;
+  }
+  .flow-num::before{content:"0" counter(step);}
+  .flow-item h3{font-weight:700;margin-bottom:6px;font-size:1rem;}
+  .flow-item p{font-size:.88rem;color:var(--ink-soft);}
+
+  /* ===== Notice / stamp box ===== */
+  .notice{
+    background:var(--verify-soft);border:1px solid var(--verify);
+    padding:20px 22px;font-size:.88rem;color:var(--ink);
+  }
+  .notice strong{color:var(--verify);}
+
+  /* ===== FAQ ===== */
+  details{border-bottom:1px solid var(--rule);padding:16px 0;}
+  summary{
+    cursor:pointer;font-weight:700;font-size:.98rem;
+    list-style:none;display:flex;justify-content:space-between;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{content:"+";font-family:'JetBrains Mono',monospace;font-size:1.2rem;color:var(--ink-faint);}
+  details[open] summary::after{content:"–";}
+  details p{margin-top:12px;font-size:.9rem;color:var(--ink-soft);}
+
+  /* ===== Final CTA ===== */
+  .final-cta{
+    background:var(--ink);color:var(--paper);text-align:center;padding:64px 24px;
+  }
+  .final-cta h2{color:var(--paper);}
+  .final-cta p{color:#C7CAD6;max-width:44ch;margin:0 auto 30px;font-size:.95rem;}
+
+  footer{padding:30px 24px;font-size:.75rem;color:var(--ink-faint);text-align:center;}
+  footer p{margin-bottom:6px;}
+
+  @media(max-width:600px){
+    .cta-row{flex-direction:column;}
+    .btn{width:100%;justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="logo-group">
+      <div class="logo-mark">
+        <img src="logo.png" alt="仮想通貨専門士ロゴ" width="34" height="34" style="display:block;object-fit:contain;">
+      </div>
+      <div class="logo">仮想通貨専門士<small>crypto-detective</small></div>
+    </div>
+    <nav class="top-nav">
+      <a href="#symptoms">こんな方へ</a>
+      <a href="#services">対応内容</a>
+      <a href="#trust">信頼できる理由</a>
+      <a href="#pricing">価格について</a>
+      <a href="#flow">相談の流れ</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="case-tag">CASE FILE — 仮想通貨詐欺 被害相談</span>
+      <h1>その送金、まだ<br>手がかりが残っているかもしれません。</h1>
+      <p class="lead">
+        仮想通貨(暗号資産)詐欺・投資詐欺の被害相談窓口です。
+        ブロックチェーン解析による送金先の追跡と、警察へ提出できる調査書の作成を行います。
+        対応可否は無料で診断します。
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-line" href="https://lin.ee/Wf9PzMT" target="_blank" rel="noopener">LINEで無料相談する</a>
+        <a class="btn btn-ghost" href="#symptoms">まずは状況を確認する</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="symptoms">
+    <div class="wrap">
+      <p class="eyebrow">SYMPTOMS — こんな状況ではありませんか</p>
+      <h2>一人で抱え込んでいませんか</h2>
+      <div class="checklist">
+        <div class="check-item"><span class="mark">[ ]</span><span>出金先・取引所と突然連絡が取れなくなった</span></div>
+        <div class="check-item"><span class="mark">[ ]</span><span>「追加で入金すれば出金できる」と言われている</span></div>
+        <div class="check-item"><span class="mark">[ ]</span><span>他の調査会社に高額な着手金を払ったが進展がない</span></div>
+        <div class="check-item"><span class="mark">[ ]</span><span>SNSやマッチングアプリで知り合った相手から投資を勧められた</span></div>
+        <div class="check-item"><span class="mark">[ ]</span><span>騙されたのかもしれないが、証拠の整理の仕方が分からない</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <p class="eyebrow">SERVICES — 対応できること</p>
+      <h2>調査でできること</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="num">01</div>
+          <h3>送金先の追跡</h3>
+          <p>ブロックチェーン上の送金履歴を辿り、資金の流れを可視化します。</p>
+        </div>
+        <div class="service-card">
+          <div class="num">02</div>
+          <h3>着金先取引所の特定</h3>
+          <p>解析した送金履歴から、資金が最終的にどの取引所に着金したかを特定します。取引所への法的な開示請求は警察の権限で行われるものであり、当窓口が代行するものではありません。</p>
+        </div>
+        <div class="service-card">
+          <div class="num">03</div>
+          <h3>調査書の作成</h3>
+          <p>解析結果を、警察への相談・被害届提出時にそのまま使える調査書としてまとめます。有料でご依頼いただく場合の対価はこの作成費です。</p>
+        </div>
+        <div class="service-card">
+          <div class="num">04</div>
+          <h3>証拠の整理・助言</h3>
+          <p>警察・弁護士への相談に必要な証拠のまとめ方をサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <p class="eyebrow">PRICING — 価格について</p>
+      <h2>個人運営だからこその価格</h2>
+      <div class="notice" style="margin-bottom:20px;">
+        費用が発生するのは、警察提出用の調査書作成をご依頼いただいた場合のみです。「必ず取り戻せる」といった成果を約束するものではなく、対価はあくまで解析・書類作成の作業費です。
+        大手調査会社のような広告費・営業人件費・多層の仲介コストがかからないため、その分を価格に反映しています。
+      </p>
+      <p style="font-size:.95rem;color:var(--ink-soft);max-width:56ch;">
+        送金先の追跡・着金先取引所の特定など、調査手法自体は専門調査会社と同じ技術・プロセスを使用しており、対応の質に妥協はありません。
+      </p>
+    </div>
+  </section>
+
+  <section id="trust">
+    <div class="wrap">
+      <p class="eyebrow">TRUST — 運営について</p>
+      <h2>安心してご相談いただくために</h2>
+      <div class="checklist">
+        <div class="check-item"><span class="mark">✓</span><span>契約前に前払い・着手金を一切要求しません</span></div>
+        <div class="check-item"><span class="mark">✓</span><span>「成功率100%」「必ず取り戻せます」といった断定的な表現は使いません</span></div>
+        <div class="check-item"><span class="mark">✓</span><span>相談・診断は何度でも無料。断ってもしつこい勧誘は一切ありません</span></div>
+        <div class="check-item"><span class="mark">✓</span><span>取引所への法的照会・加害者の特定は警察の権限で行われるものとご案内しており、当窓口が代行すると謳うことはありません</span></div>
+        <div class="check-item"><span class="mark">✓</span><span>運営者はX(旧Twitter)で <a href="https://twitter.com/crypto_detect1" style="color:var(--verify);">@crypto_detect1</a> として情報発信しており、身元を隠していません</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="flow">
+    <div class="wrap">
+      <p class="eyebrow">FLOW — 相談の流れ</p>
+      <h2>相談から診断まで</h2>
+      <div class="flow">
+        <div class="flow-item">
+          <div class="flow-num"></div>
+          <div><h3>LINEで現状を伝える</h3><p>いつ・どこで・いくら送金したか、分かる範囲で構いません。</p></div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num"></div>
+          <div><h3>送金先アドレス・やり取りの共有</h3><p>スクリーンショットをまとめて送るだけで大丈夫です。</p></div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num"></div>
+          <div><h3>対応可否の無料診断</h3><p>調査の進め方や、想定される選択肢を説明します。</p></div>
+        </div>
+      </div>
+      <div style="margin-top:26px;" class="notice">
+        <strong>料金について:</strong> 診断・初回相談は何度でも無料です。調査書の作成をご依頼いただく場合の費用は、内容確定後にご案内します。
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <p class="eyebrow">FAQ — よくある質問</p>
+      <h2>相談前に気になること</h2>
+      <details open>
+        <summary>相談は本当に無料ですか？</summary>
+        <p>はい。現状のヒアリングと、対応が可能かどうかの診断までは何度でも無料です。費用が発生するのは、実際に調査書の作成を依頼された場合のみです。</p>
+      </details>
+      <details>
+        <summary>どんな情報を用意すればいいですか？</summary>
+        <p>送金先のウォレットアドレスや取引所名、相手とのやり取りのスクリーンショットがあれば、初回相談の精度が上がります。手元になくても相談可能です。</p>
+      </details>
+      <details>
+        <summary>被害から時間が経っていても相談できますか？</summary>
+        <p>はい。時間の経過によって対応できる範囲は変わりますが、送金履歴の解析など、状況によって選べる手段は複数あります。</p>
+      </details>
+      <details>
+        <summary>取引所への開示請求や加害者の特定まで行ってもらえますか？</summary>
+        <p>いいえ。当窓口が行うのは、ブロックチェーン上の送金履歴を解析し、着金先の取引所を特定して調査書にまとめることまでです。取引所への法的な開示請求や、加害者の特定・所在調査は警察の権限で行われるものであり、当窓口が代行することはありません。調査書はその後の警察対応をスムーズにするための資料です。</p>
+      </details>
+      <details>
+        <summary>他の調査会社にすでにお金を払ってしまいました。相談できますか？</summary>
+        <p>可能です。契約内容が適正かどうかも含めて、第三者の立場で確認できます。</p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<div class="final-cta">
+  <h2>まずは、状況を教えてください。</h2>
+  <p>診断だけなら費用はかかりません。一人で抱え込まず、まずはご相談ください。</p>
+  <a class="btn btn-line" href="https://lin.ee/Wf9PzMT" target="_blank" rel="noopener">LINEで相談する</a>
+</div>
+
+<footer>
+  <p>仮想通貨専門士 — 仮想通貨詐欺・投資詐欺 被害調査相談（crypto-detective）</p>
+  <p>本サイトは個人運営の調査相談窓口です。捜査機関・法律事務所ではありません。取引所への法的開示請求・加害者の特定は警察の権限で行われるものであり、当窓口が代行するものではありません。</p>
+  <p>&copy; 2026 crypto-detective. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
